@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula7</title>
+    <style>
+         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            
+            
+            padding: 10px;
+        }
+                   
+
+        body{
+            margin: .1rem;
+            background-color: rgb(234, 245, 250);
+        }
+
+        .container{
+            display: grid;
+            margin: auto;
+            width: 80%;
+            gap: 10px 20px;
+            color: white;
+            font-border: solid;
+            
+
+            
+
+            grid-auto-rows: 130px;
+
+            
+            grid-template-areas: 
+            "box-1 box-1 box-1 box-1 "
+            "box-2 box-3 box-3 box-3 "
+            "box-2 box-3 box-3 box-3 "
+            "box-2 box-3 box-3 box-3 "
+            "box-2 box-4 box-4 box-4 "
+            "box-2 box-4 box-4 box-4 ";
+        
+        }
+
+        .box-1{
+            
+            grid-area: box-1;
+            text-align: center;
+            background-color: #283a63;
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            
+           
+           
+        } 
+        h1{
+            font-size: 70px;
+        }
+        h4{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            
+        }
+
+        .box-2{
+            grid-area: box-2;
+            background: url('https://maladeaventuras.com/wp-content/uploads/2021/04/praia-do-arrombado.jpg');
+            background-position: 80%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 10;
+           
+        }
+
+        .box-3{
+            grid-area: box-3;
+            background: url('https://pousadaaltomarluiscorreia.com.br/img/praia_do_itaqui_luis_correia.jpg');
+            background-position: 30%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:400;
+            
+           
+            
+        }
+
+        .box-4{
+            grid-area: box-4;
+            background: url('https://www.guiaviagensbrasil.com/imagens/aguas-cristalinas-praia-do-coqueiro-luis-correia-pi.jpg');
+            background-position: 50%;
+           
+        }
+
+        
+    
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box box-1">
+            <h1>Luís Correia</h1>
+        <h4>VENHA CONHECER O LITORAL DO PIAUÍ</h4></div>
+        <div class="box box-2">
+            <h2>Praia do Arrombado</h2></div>
+        <div class="box box-3"><h2>Barra Grande</h2></div>
+        <div class="box box-4">
+            <h2>Praia do Coqueiro</h2>
+        </div>
+    </div>
+</body>
+</html>
